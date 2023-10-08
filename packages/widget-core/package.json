@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsup src/index.ts --format=esm --dts",
+    "postinstall": "pnpm build",
     "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
