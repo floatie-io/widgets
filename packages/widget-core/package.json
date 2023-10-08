@@ -14,15 +14,13 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "tsup src/index.ts --format=esm --dts --watch",
     "build": "tsup src/index.ts --format=esm --dts",
     "postinstall": "pnpm build",
     "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
     "@floatie/tsconfig": "workspace:*",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.11"
+    "tsup": "^7.2.0"
   }
 }
