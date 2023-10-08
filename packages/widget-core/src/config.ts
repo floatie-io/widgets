@@ -1,0 +1,9 @@
+export interface WidgetConfig {
+  offsetBottom?: number
+  offsetRight?: number
+  size?: 'medium' | 'large'
+  title?: string
+  placeholder?: string
+  sendButtonLabel?: string
+  confirmationMessage?: string
+}

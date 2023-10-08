@@ -1,0 +1,39 @@
+{
+  "name": "@floatie/widget-vue",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "files": [
+    "dist",
+    "dist/types"
+  ],
+  "module": "dist/index.js",
+  "types": "dist/types/widget-vue/src/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "pnpm type-check && pnpm build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit --composite false",
+    "generate-types": "rm -rf src/types && vue-tsc --emitDeclarationOnly",
+    "prepublishOnly": "pnpm build && pnpm generate-types"
+  },
+  "dependencies": {
+    "@floatie/widget-core": "workspace:*",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.1.1",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.8.2",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "@vue/tsconfig": "^0.4.0",
+    "autoprefixer": "^10.4.16",
+    "tailwindcss": "^3.3.3",
+    "typescript": "~5.2.2",
+    "vite": "^4.4.11",
+    "vite-plugin-css-injected-by-js": "^3.3.0",
+    "vue-tsc": "^1.8.15"
+  }
+}

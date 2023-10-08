@@ -1,0 +1,14 @@
+{
+    "name": "@floatie/tsconfig",
+    "version": "0.0.2",
+    "description": "TSConfig files used in Floatie projects",
+    "homepage": "",
+    "repository": {
+        "type": "git",
+        "directory": "packages/tsconfig"
+    },
+    "author": "Eugen Istoc",
+    "exports": {
+        "./base": "./tsconfig.base.json"
+    }
+}

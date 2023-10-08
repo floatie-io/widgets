@@ -1,0 +1,6 @@
+{
+  "extends": "@floatie/tsconfig/base",
+  "include": [
+    "src"
+  ]
+}

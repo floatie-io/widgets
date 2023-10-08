@@ -1,0 +1,27 @@
+{
+  "name": "@floatie/widget-core",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/index.js",
+  "types": "dist/types/src/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsup src/index.ts --format=esm --dts",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@floatie/tsconfig": "workspace:*",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11"
+  }
+}

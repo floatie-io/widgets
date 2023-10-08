@@ -1,0 +1,21 @@
+{
+  "name": "floatie",
+  "version": "0.0.0",
+  "description": "Floatie",
+  "author": "Eugen Istoc",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules **/node_modules",
+    "changeset": "changeset"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
+  }
+}
