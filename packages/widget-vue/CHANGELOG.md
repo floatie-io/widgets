@@ -1,5 +1,16 @@
 # @floatie/widget-vue
 
+## 1.1.0
+
+### Minor Changes
+
+- expand config to include floatie instance
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-core@1.1.0
+
 ## 1.0.0
 
 ### Major Changes
