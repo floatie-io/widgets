@@ -1,5 +1,11 @@
 # @floatie/widget-core
 
+## 1.1.1
+
+### Patch Changes
+
+- don't build on postinstall
+
 ## 1.1.0
 
 ### Minor Changes
