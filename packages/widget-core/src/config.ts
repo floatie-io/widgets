@@ -1,4 +1,5 @@
 export interface WidgetConfig {
+  floatieInstance?: string
   offsetBottom?: number
   offsetRight?: number
   size?: 'medium' | 'large'

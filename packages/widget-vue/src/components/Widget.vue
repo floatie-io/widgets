@@ -97,7 +97,7 @@ const setActiveMessageType = async (type: string) => {
 const sendFeedback = async () => {
   sendStatus.value = DataStatus.PENDING
 
-  await send(props.clientKey, activeMessageType.value, message.value)
+  await send(props.clientKey, activeMessageType.value, message.value, props.config)
 
   sendStatus.value = DataStatus.SUCCESS
 }
