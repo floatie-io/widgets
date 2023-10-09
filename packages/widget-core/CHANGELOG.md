@@ -1,5 +1,11 @@
 # @floatie/widget-core
 
+## 1.1.2
+
+### Patch Changes
+
+- set correct types in dist
+
 ## 1.1.1
 
 ### Patch Changes
