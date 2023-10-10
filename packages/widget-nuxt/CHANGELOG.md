@@ -1,5 +1,11 @@
 # @floatie/widget-nuxt
 
+## 1.1.6
+
+### Patch Changes
+
+- transpile @floatie/widget-vue
+
 ## 1.1.5
 
 ### Patch Changes
