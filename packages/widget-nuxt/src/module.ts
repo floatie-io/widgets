@@ -1,14 +1,20 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addComponent } from '@nuxt/kit'
 import { WidgetConfig } from '@floatie/widget-core'
 
 export default defineNuxtModule<WidgetConfig>({
   meta: {
-    name: '@floatie/nuxt',
+    name: '@nuxtjs/floatie',
+    configKey: 'floatie',
+    compatibility: {
+      nuxt: '^3.0.0',
+    },
   },
   defaults: {},
   setup(options, nuxt) {
-    const resolver = createResolver(import.meta.url)
-
-    addPlugin(resolver.resolve('./runtime/plugin'))
+    addComponent({
+      name: 'Widget',
+      export: 'Widget',
+      filePath: '@floatie/widget-vue',
+    })
   },
 })
