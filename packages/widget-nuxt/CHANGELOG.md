@@ -1,5 +1,20 @@
 # @floatie/widget-nuxt
 
+## 1.1.8
+
+### Patch Changes
+
+- remove prepublishOnly
+- Updated dependencies
+  - @floatie/widget-vue@1.1.4
+
+## 1.1.7
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-vue@1.1.3
+
 ## 1.1.6
 
 ### Patch Changes

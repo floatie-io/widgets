@@ -1,5 +1,17 @@
 # @floatie/widget-vue
 
+## 1.1.4
+
+### Patch Changes
+
+- remove prepublishOnly
+
+## 1.1.3
+
+### Patch Changes
+
+- remove bg-white
+
 ## 1.1.2
 
 ### Patch Changes
