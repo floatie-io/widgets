@@ -2,7 +2,7 @@
   font-family: 'Inter Tight', sans-serif;
   margin-bottom: var(--fl-margin-bottom);
   margin-right: calc(var(--fl-margin-right) + 10px);
-  @apply antialiased;
+  @apply antialiased text-gray-900 dark:text-slate-50;
 
   /* Positioning */
   @apply fixed bottom-0 right-0 z-50;
@@ -42,7 +42,6 @@
     @apply bottom-0 z-10 p-4 bg-white border border-gray-200 border-solid shadow-xl relative;
 
     /* Responsive */
-
     @media (min-width: 768px) {
       margin-bottom: var(--fl-wrapper-container-y-offset);
       margin-right: calc(var(--fl-wrapper-container-x-offset) - 1rem);
@@ -58,7 +57,8 @@
         @apply flex items-center justify-between text-lg font-semibold;
 
         .fl-feedback-container-header-close {
-          @apply flex items-center justify-around rounded-lg cursor-pointer hover:bg-gray-100/80 w-7 h-7 hover:dark:bg-gray-900;
+          @apply flex items-center justify-around rounded-lg cursor-pointer hover:bg-gray-100/80 w-7 h-7 hover:dark:bg-gray-800;
+          @apply transition duration-500 ease-in-out transform;
 
           .fl-close-icon {
             @apply text-2xl text-gray-400;
@@ -73,7 +73,7 @@
         @apply font-medium grid grid-cols-3 gap-2;
 
         .fl-feedback-container-content-message-type {
-          @apply flex items-center p-1 bg-gray-100 rounded-lg cursor-pointer justify-evenly hover:bg-gray-200 hover:dark:bg-gray-800/90;
+          @apply flex items-center p-1 bg-gray-100 rounded-lg cursor-pointer justify-evenly hover:bg-gray-200 hover:dark:bg-gray-700/90;
           @apply transition duration-500 ease-in-out transform;
 
           /* Responsive */
@@ -151,13 +151,19 @@
     }
 
     .arrow-down {
-      @apply absolute bottom-0 right-0 -mb-4 mr-5;
+      @apply absolute bottom-0 right-0 -mb-4 mr-6;
       filter: drop-shadow(2px 10px 3px rgba(0, 0, 0, 0.05));
+
       width: 0;
       height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
       border-top: 16px solid white;
+
+      /* Dark mode */
+      @media (prefers-color-scheme: dark) {
+        @apply border-t-gray-900;
+      }
     }
   }
 }
