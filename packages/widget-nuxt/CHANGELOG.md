@@ -1,5 +1,20 @@
 # @floatie/widget-nuxt
 
+## 1.1.10
+
+### Patch Changes
+
+- Update darkmode theme
+- Updated dependencies
+  - @floatie/widget-vue@1.1.6
+
+## 1.1.9
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-vue@1.1.5
+
 ## 1.1.8
 
 ### Patch Changes

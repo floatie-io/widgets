@@ -1,6 +1,6 @@
 {
   "name": "@floatie/widget-nuxt",
-  "version": "1.1.8",
+  "version": "1.1.10",
   "private": false,
   "description": "My new Nuxt module",
   "repository": "your-org/my-module",

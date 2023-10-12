@@ -1,5 +1,17 @@
 # @floatie/widget-vue
 
+## 1.1.6
+
+### Patch Changes
+
+- Update darkmode theme
+
+## 1.1.5
+
+### Patch Changes
+
+- Update darkmode theme
+
 ## 1.1.4
 
 ### Patch Changes
