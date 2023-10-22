@@ -1,5 +1,11 @@
 # @floatie/widget-vue
 
+## 2.0.1
+
+### Patch Changes
+
+- bump bundled core
+
 ## 2.0.0
 
 ### Major Changes
