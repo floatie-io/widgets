@@ -1,5 +1,25 @@
 # @floatie/widget-nuxt
 
+## 2.0.0
+
+### Major Changes
+
+- use only TLD as instance url.
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-core@2.0.0
+  - @floatie/widget-vue@2.0.0
+
+## 1.1.11
+
+### Patch Changes
+
+- Bump dependencies
+- Updated dependencies
+  - @floatie/widget-vue@1.1.7
+
 ## 1.1.10
 
 ### Patch Changes

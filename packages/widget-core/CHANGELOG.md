@@ -1,5 +1,11 @@
 # @floatie/widget-core
 
+## 2.0.0
+
+### Major Changes
+
+- use only TLD as instance url.
+
 ## 1.1.2
 
 ### Patch Changes

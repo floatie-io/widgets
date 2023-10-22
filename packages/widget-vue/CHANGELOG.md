@@ -1,5 +1,22 @@
 # @floatie/widget-vue
 
+## 2.0.0
+
+### Major Changes
+
+- use only TLD as instance url.
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-core@2.0.0
+
+## 1.1.7
+
+### Patch Changes
+
+- Bump dependencies
+
 ## 1.1.6
 
 ### Patch Changes

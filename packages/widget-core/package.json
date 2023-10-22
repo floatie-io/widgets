@@ -1,7 +1,7 @@
 {
   "name": "@floatie/widget-core",
   "private": false,
-  "version": "1.1.2",
+  "version": "2.0.0",
   "type": "module",
   "files": [
     "dist"
@@ -21,6 +21,10 @@
   },
   "devDependencies": {
     "@floatie/tsconfig": "workspace:*",
+    "@types/ua-parser-js": "^0.7.38",
     "tsup": "^7.2.0"
+  },
+  "dependencies": {
+    "ua-parser-js": "^1.0.36"
   }
 }

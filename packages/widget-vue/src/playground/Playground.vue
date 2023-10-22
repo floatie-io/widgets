@@ -11,9 +11,9 @@ import Widget from '../components/Widget.vue'
         sendButtonLabel: 'Send message',
         placeholder: 'custom enter placeholder',
         confirmationMessage: 'Custom confirm',
-        floatieInstance: 'http://localhost:3000/api/project/feedback',
+        floatieInstance: 'http://localhost:3000',
       }"
-      clientKey="v1W8f1-A0mqHMydo6-F7Y"
+      clientKey="s9kVs9HjcEqpA-9_ac3zk"
     />
   </div>
 </template>

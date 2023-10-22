@@ -1,7 +1,7 @@
 {
     "files.exclude": {
         "**/node_modules": true,
-        "**/dist": true,
+        // "**/dist": true,
         "**/.unlighthouse": true,
         "**/.{prettierrc,gitignore,tool-versions}": true,
         "**/*.tsbuildinfo": true
