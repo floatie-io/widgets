@@ -1,5 +1,11 @@
 # @floatie/widget-core
 
+## 2.0.1
+
+### Patch Changes
+
+- fix: Use feedback.ua for user agent
+
 ## 2.0.0
 
 ### Major Changes

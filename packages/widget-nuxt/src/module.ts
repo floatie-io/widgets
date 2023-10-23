@@ -1,5 +1,5 @@
 import { defineNuxtModule, addComponent } from '@nuxt/kit'
-import { WidgetConfig } from '@floatie/widget-core'
+import type { WidgetConfig } from '@floatie/widget-core'
 
 export default defineNuxtModule<WidgetConfig>({
   meta: {

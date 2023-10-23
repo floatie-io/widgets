@@ -1,5 +1,12 @@
 # @floatie/widget-vue
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-core@2.0.1
+
 ## 2.0.1
 
 ### Patch Changes

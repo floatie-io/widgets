@@ -18,14 +18,14 @@ export const send = async (
   const mergedConfig = Object.assign(defaultConfig, config)
   const uaParser = new UAParser()
 
-  const metadata = {
+  const ua = {
     ...uaParser.getResult(),
   }
 
   const requestBody = JSON.stringify({
     type,
     message,
-    metadata,
+    ua,
   })
 
   try {

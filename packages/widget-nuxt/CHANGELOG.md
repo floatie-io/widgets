@@ -1,5 +1,14 @@
 # @floatie/widget-nuxt
 
+## 2.0.2
+
+### Patch Changes
+
+- fix: Use feedback.ua for user agent
+- Updated dependencies
+  - @floatie/widget-core@2.0.1
+  - @floatie/widget-vue@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes
