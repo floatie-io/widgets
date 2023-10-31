@@ -3,28 +3,31 @@
   "private": false,
   "version": "2.0.1",
   "type": "module",
+  "source": "src/index.ts",
   "files": [
     "dist"
   ],
   "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": "./dist/index.js",
-    "./package.json": "./package.json"
-  },
-  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
   "scripts": {
-    "dev": "tsup src/index.ts --format=esm --dts --watch",
-    "build": "tsup src/index.ts --format=esm --dts",
-    "prepare": "pnpm build",
-    "prepublishOnly": "pnpm build"
+    "build:theme:basic": "tailwindcss -i ./src/assets/themes/basic.css -o ./dist/themes/basic.css --postcss -m",
+    "build:theme:rating": "tailwindcss -i ./src/assets/themes/rating.css -o ./dist/themes/rating.css --postcss -m",
+    "build:themes": "run-s build:theme:*",
+    "build:bundle": "vite build",
+    "build": "run-s build:bundle build:themes",
+    "dev": "vite build --watch"
   },
   "devDependencies": {
     "@floatie/tsconfig": "workspace:*",
     "@types/ua-parser-js": "^0.7.38",
-    "tsup": "^7.2.0"
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.3.5",
+    "typescript": "5.0.4",
+    "unocss": "^0.57.1",
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.3"
   },
   "dependencies": {
-    "ua-parser-js": "^1.0.36"
+    "ua-parser-js": "^1.0.37"
   }
 }

@@ -10,7 +10,7 @@ export default defineNuxtModule<WidgetConfig>({
     },
   },
   defaults: {},
-  setup(options, nuxt) {
+  setup(_, nuxt) {
     nuxt.options.build.transpile.push('@floatie/widget-vue')
 
     addComponent({

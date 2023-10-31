@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import '../assets/main.css'
+import '@floatie/widget-core/dist/themes/basic.css'
+
 import { Icon } from '@iconify/vue'
 import { computed, ref } from 'vue'
 
@@ -173,8 +174,3 @@ const sendFeedback = async () => {
   </div>
   <div class="fl-backdrop" :class="{ 'is-open': isOpen, 'is-closed': !isOpen }" @click="isOpen = false"></div>
 </template>
-
-<style lang="postcss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap');
-@import '../assets/theme.css';
-</style>

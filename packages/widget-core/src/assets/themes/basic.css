@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap');
+
 .fl-container {
-  font-family: 'Inter Tight', sans-serif;
   margin-bottom: var(--fl-margin-bottom);
   margin-right: calc(var(--fl-margin-right) + 10px);
-  @apply antialiased text-gray-900 dark:text-slate-50;
+  @apply antialiased text-gray-900 dark:text-slate-50 font-sans;
 
   /* Positioning */
   @apply fixed bottom-0 right-0 z-50;

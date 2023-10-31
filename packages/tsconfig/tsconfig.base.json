@@ -22,6 +22,7 @@
         "noUnusedParameters": true,
         "checkJs": true,
         "allowSyntheticDefaultImports": true,
-        "declaration": true
+        "declaration": true,
+        "allowImportingTsExtensions": true
     }
 }

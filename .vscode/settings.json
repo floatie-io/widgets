@@ -1,9 +1,12 @@
 {
     "files.exclude": {
-        "**/node_modules": true,
-        "**/dist": true,
+        // "**/node_modules": true,
+        // "**/dist": true,
         "**/.unlighthouse": true,
         "**/.{prettierrc,gitignore,tool-versions}": true,
         "**/*.tsbuildinfo": true
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
     }
 }

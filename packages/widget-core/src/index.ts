@@ -1,9 +1,9 @@
-import type { WidgetConfig } from './config.js'
+import type { WidgetConfig } from './config.ts'
 import { UAParser } from 'ua-parser-js'
 
-export * from './config.js'
-export * from './data-status.enum.js'
-export * from './floatie-error.interface.js'
+export * from './config.ts'
+export * from './data-status.enum.ts'
+export * from './floatie-error.interface.ts'
 
 export const send = async (
   clientKey: string,
