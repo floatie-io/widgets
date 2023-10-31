@@ -1,5 +1,11 @@
 # @floatie/widget-core
 
+## 3.0.0
+
+### Major Changes
+
+- 0e77441: Move themes to core
+
 ## 2.0.1
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @floatie/widget-vue
 
+## 3.0.0
+
+### Major Changes
+
+- 0e77441: Move themes to core
+
+### Patch Changes
+
+- Updated dependencies [0e77441]
+  - @floatie/widget-core@3.0.0
+
 ## 2.0.2
 
 ### Patch Changes

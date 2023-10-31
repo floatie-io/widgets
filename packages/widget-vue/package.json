@@ -1,6 +1,6 @@
 {
   "name": "@floatie/widget-vue",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "private": false,
   "type": "module",
   "files": [

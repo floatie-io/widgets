@@ -1,5 +1,13 @@
 # @floatie/widget-nuxt
 
+## 2.0.3
+
+### Patch Changes
+
+- Updated dependencies [0e77441]
+  - @floatie/widget-core@3.0.0
+  - @floatie/widget-vue@3.0.0
+
 ## 2.0.2
 
 ### Patch Changes

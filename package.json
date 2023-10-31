@@ -18,10 +18,5 @@
   },
   "dependencies": {
     "@changesets/cli": "^2.26.2"
-  },
-  "devDependencies": {
-    "@parcel/packager-ts": "2.10.1",
-    "@parcel/transformer-typescript-types": "2.10.1",
-    "typescript": ">=3.0.0"
   }
 }
