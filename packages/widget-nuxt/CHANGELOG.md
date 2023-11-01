@@ -1,5 +1,11 @@
 # @floatie/widget-nuxt
 
+## 2.1.1
+
+### Patch Changes
+
+- Import useRuntimeConfig
+
 ## 2.1.0
 
 ### Minor Changes
