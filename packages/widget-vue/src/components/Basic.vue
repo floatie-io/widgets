@@ -2,14 +2,14 @@
 import '@floatie/widget-core/dist/themes/basic.css'
 
 import { Icon } from '@iconify/vue'
-import { computed, ref } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
-import type { WidgetConfig } from '@floatie/widget-core'
+import { WidgetType, type BasicWidgetConfig, type BasicWidgetData } from '@floatie/widget-core'
 import { DataStatus, send } from '@floatie/widget-core'
 
-const props = defineProps<{ config?: WidgetConfig; clientKey: string }>()
+const props = defineProps<{ config?: BasicWidgetConfig; clientKey: string }>()
 
-const defaultConfig: WidgetConfig = {
+const defaultConfig: BasicWidgetConfig = {
   offsetBottom: 30,
   offsetRight: 20,
   size: 'medium',
@@ -49,8 +49,11 @@ const themeVars = computed(() => {
 })
 
 const isEnteringMessage = ref(false)
-const message = ref()
-const activeMessageType = ref()
+const widgetData = reactive<BasicWidgetData>({
+  message: '',
+  type: 'BUG',
+})
+
 const isOpen = ref(false)
 const sendStatus = ref(DataStatus.DEFAULT)
 
@@ -59,7 +62,7 @@ const reset = (e: MouseEvent) => {
 
   setTimeout(() => {
     isEnteringMessage.value = false
-    message.value = ''
+    widgetData.message = ''
     sendStatus.value = DataStatus.DEFAULT
   }, 500)
 }
@@ -88,24 +91,24 @@ const messageTypes = ref([
   },
 ])
 
-const setActiveMessageType = async (type: string) => {
+const setActiveMessageType = async (type: BasicWidgetData['type']) => {
   if (sendStatus.value === DataStatus.PENDING) return
 
   isEnteringMessage.value = true
-  activeMessageType.value = type
+  widgetData.type = type
 }
 
 const sendFeedback = async () => {
   sendStatus.value = DataStatus.PENDING
 
-  await send(props.clientKey, activeMessageType.value, message.value, props.config)
+  await send<BasicWidgetData>(props.clientKey, WidgetType.Basic, widgetData, props.config)
 
   sendStatus.value = DataStatus.SUCCESS
 }
 </script>
 
 <template>
-  <div class="fl-container" :style="themeVars">
+  <div class="fl-container style-basic" :style="themeVars">
     <div class="fl-trigger" @click="isOpen = true">
       <Icon icon="ion:help" class="fl-trigger-icon" />
     </div>
@@ -123,12 +126,12 @@ const sendFeedback = async () => {
             v-for="messageType in messageTypes"
             class="fl-feedback-container-content-message-type"
             :class="{
-              'is-active': activeMessageType === messageType.type && isEnteringMessage,
+              'is-active': widgetData.type === messageType.type && isEnteringMessage,
               'is-not-enteringMessage': !isEnteringMessage,
               'is-enteringMessage': isEnteringMessage,
-              'is-explicit-inactive': isEnteringMessage && activeMessageType !== messageType.type,
+              'is-explicit-inactive': isEnteringMessage && widgetData.type !== messageType.type,
             }"
-            @click="setActiveMessageType(messageType.type)"
+            @click="setActiveMessageType(messageType.type as BasicWidgetData['type'])"
           >
             <Icon
               :icon="messageType.icon"
@@ -150,7 +153,7 @@ const sendFeedback = async () => {
           v-show="isEnteringMessage && sendStatus !== DataStatus.SUCCESS"
         >
           <textarea
-            v-model="message"
+            v-model="widgetData.message"
             ref="messageInput"
             :placeholder="config.placeholder"
             rows="3"

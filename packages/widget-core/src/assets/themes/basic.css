@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap');
 
-.fl-container {
+.fl-container.style-basic {
   margin-bottom: var(--fl-margin-bottom);
   margin-right: calc(var(--fl-margin-right) + 10px);
   @apply antialiased text-gray-900 dark:text-slate-50 font-sans;

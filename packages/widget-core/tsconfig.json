@@ -1,5 +1,4 @@
 {
-  "extends": "@floatie/tsconfig/base",
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",

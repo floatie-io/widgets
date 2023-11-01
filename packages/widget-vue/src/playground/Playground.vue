@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import Widget from '../components/Widget.vue'
+import Basic from '../components/Basic.vue'
+import Rating from '../components/Rating.vue'
 </script>
 
 <template>
   <div>
     Vue Widget playground
-    <Widget
+    <Basic
       :config="{
         title: 'Care for some feedback?',
         sendButtonLabel: 'Send message',
@@ -15,5 +16,7 @@ import Widget from '../components/Widget.vue'
       }"
       clientKey="s9kVs9HjcEqpA-9_ac3zk"
     />
+
+    <!-- <Rating clientKey="s9kVs9HjcEqpA-9_ac3zk" /> -->
   </div>
 </template>

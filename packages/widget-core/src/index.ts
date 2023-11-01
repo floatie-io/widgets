@@ -1,17 +1,18 @@
-import type { WidgetConfig } from './config.ts'
+import type { BaseConfig } from './widgets/base/config.ts'
+import { WidgetType } from './widgets'
 import { UAParser } from 'ua-parser-js'
 
-export * from './config.ts'
+export * from './widgets'
 export * from './data-status.enum.ts'
 export * from './floatie-error.interface.ts'
 
-export const send = async (
+export const send = async <WidgetData>(
   clientKey: string,
-  type: 'BUG' | 'FEATURE' | 'COMMENT',
-  message: string,
-  config: WidgetConfig = {}
+  widgetType: WidgetType,
+  data: WidgetData,
+  config: any = {}
 ) => {
-  const defaultConfig: WidgetConfig = {
+  const defaultConfig: BaseConfig = {
     floatieInstance: 'https://floatie.io',
   }
 
@@ -23,8 +24,8 @@ export const send = async (
   }
 
   const requestBody = JSON.stringify({
-    type,
-    message,
+    widgetType,
+    data,
     ua,
   })
 

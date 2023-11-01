@@ -1,6 +1,6 @@
 <template>
   <div>
     Nuxt module playground!
-    <Widget />
+    <FloatieBasic :config="{ offsetBottom: 100 }" />
   </div>
 </template>

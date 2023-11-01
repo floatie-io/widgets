@@ -1,5 +1,17 @@
 # @floatie/widget-nuxt
 
+## 2.1.0
+
+### Minor Changes
+
+- Refactor the way different types of widgets are built
+
+### Patch Changes
+
+- Updated dependencies
+  - @floatie/widget-core@3.1.0
+  - @floatie/widget-vue@3.1.0
+
 ## 2.0.3
 
 ### Patch Changes

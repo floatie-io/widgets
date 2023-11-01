@@ -1,11 +1,2 @@
-.btn {
-  color: red;
-
-  &:hover {
-    --un-bg-opacity:1;background-color:rgb(219 234 254 / var(--un-bg-opacity));
-  }
-
-  .poop {
-    --un-bg-opacity:1;background-color:rgb(254 226 226 / var(--un-bg-opacity));
-  }
+.fl-container.style-rating {
 }

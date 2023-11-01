@@ -1,7 +1,11 @@
-import { defineNuxtModule, addComponent } from '@nuxt/kit'
-import type { WidgetConfig } from '@floatie/widget-core'
+import { defineNuxtModule, addComponent, createResolver } from '@nuxt/kit'
+import { defu } from 'defu'
 
-export default defineNuxtModule<WidgetConfig>({
+interface FloatieConfig {
+  clientKey?: string
+}
+
+export default defineNuxtModule<FloatieConfig>({
   meta: {
     name: '@nuxtjs/floatie',
     configKey: 'floatie',
@@ -9,14 +13,21 @@ export default defineNuxtModule<WidgetConfig>({
       nuxt: '^3.0.0',
     },
   },
-  defaults: {},
-  setup(_, nuxt) {
+  defaults: {
+    clientKey: undefined,
+  },
+  setup(options, nuxt) {
+    const resolver = createResolver(import.meta.url)
+
+    nuxt.options.runtimeConfig.public.floatie = defu(nuxt.options.runtimeConfig.public.floatie!, {
+      clientKey: options.clientKey,
+    })
+
     nuxt.options.build.transpile.push('@floatie/widget-vue')
 
     addComponent({
-      name: 'Widget',
-      export: 'Widget',
-      filePath: '@floatie/widget-vue',
+      name: 'FloatieBasic',
+      filePath: resolver.resolve('runtime/components/FloatieBasic.vue'),
     })
   },
 })
