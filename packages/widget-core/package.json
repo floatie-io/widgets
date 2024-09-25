@@ -19,15 +19,15 @@
   },
   "devDependencies": {
     "@floatie/tsconfig": "workspace:*",
-    "@types/ua-parser-js": "^0.7.38",
+    "@types/ua-parser-js": "^0.7.39",
     "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.3.5",
-    "typescript": "5.0.4",
-    "unocss": "^0.57.1",
-    "vite": "^4.5.0",
-    "vite-plugin-dts": "^3.6.3"
+    "tailwindcss": "^3.4.13",
+    "typescript": "5.6.2",
+    "unocss": "^0.62.4",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.2"
   },
   "dependencies": {
-    "ua-parser-js": "^1.0.37"
+    "ua-parser-js": "^1.0.39"
   }
 }
