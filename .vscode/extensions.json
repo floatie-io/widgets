@@ -3,8 +3,6 @@
         "heybourn.headwind",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
-        "vue.vscode-typescript-vue-plugin",
-        "vue.volar",
         "irongeek.vscode-env",
         "antfu.iconify",
         "cpylua.language-postcss"
