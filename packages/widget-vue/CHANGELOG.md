@@ -1,5 +1,16 @@
 # @floatie/widget-vue
 
+## 3.2.0
+
+### Minor Changes
+
+- ad63e35: Update packages
+- sdfg
+
+### Patch Changes
+
+- update
+
 ## 3.1.0
 
 ### Minor Changes

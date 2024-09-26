@@ -1,6 +1,6 @@
 {
   "name": "@floatie/widget-nuxt",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "private": false,
   "description": "My new Nuxt module",
   "repository": "https://github.com/floatie-io/widgets",
@@ -23,7 +23,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "changelogen --bump",
+    "release": "pnpm lint && pnpm test && changelogen --bump && npm publish && git push",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"

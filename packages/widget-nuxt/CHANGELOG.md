@@ -1,5 +1,32 @@
 # @floatie/widget-nuxt
 
+## 2.2.0
+
+### Minor Changes
+
+- ad63e35: Update packages
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies [ad63e35]
+- Updated dependencies
+  - @floatie/widget-vue@3.2.0
+
+## v2.1.7
+
+[compare changes](https://github.com/floatie-io/widgets/compare/v2.1.4...v2.1.7)
+
+### 🏡 Chore
+
+- Update ([0bdd574](https://github.com/floatie-io/widgets/commit/0bdd574))
+- Udpate ([b5753fc](https://github.com/floatie-io/widgets/commit/b5753fc))
+- Bump version ([13efe45](https://github.com/floatie-io/widgets/commit/13efe45))
+
+### ❤️ Contributors
+
+- Eugen Istoc <eugenistoc@gmail.com>
+
 ## v2.1.6
 
 [compare changes](https://github.com/floatie-io/widgets/compare/v2.1.4...v2.1.6)
