@@ -13,7 +13,7 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules **/node_modules",
-    "build": "pnpm --filter @floatie/* build",
+    "build": "bun --filter @floatie/* build",
     "changeset": "changeset"
   },
   "dependencies": {
