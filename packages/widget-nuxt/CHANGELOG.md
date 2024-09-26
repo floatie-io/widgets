@@ -1,5 +1,17 @@
 # @floatie/widget-nuxt
 
+## v2.1.5
+
+[compare changes](https://github.com/floatie-io/widgets/compare/v2.1.4...v2.1.5)
+
+### 🏡 Chore
+
+- Update ([0bdd574](https://github.com/floatie-io/widgets/commit/0bdd574))
+
+### ❤️ Contributors
+
+- Eugen Istoc <eugenistoc@gmail.com>
+
 ## v2.1.4
 
 [compare changes](https://github.com/floatie-io/widgets/compare/v2.1.5...v2.1.4)
