@@ -3,8 +3,8 @@ import { WidgetType } from './widgets'
 import { UAParser } from 'ua-parser-js'
 
 export * from './widgets'
-export * from './data-status.enum.ts'
-export * from './floatie-error.interface.ts'
+export * from './data-status.enum'
+export * from './floatie-error.interface'
 
 export const send = async <WidgetData>(
   clientKey: string,
