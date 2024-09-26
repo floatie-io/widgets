@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Basic from '../components/Basic.vue'
-import Rating from '../components/Rating.vue'
 </script>
 
 <template>
@@ -12,7 +11,7 @@ import Rating from '../components/Rating.vue'
         sendButtonLabel: 'Send message',
         placeholder: 'custom enter placeholder',
         confirmationMessage: 'Custom confirm',
-        floatieInstance: 'http://localhost:3000',
+        floatieInstance: 'https://floatie.dev:3000',
       }"
       clientKey="s9kVs9HjcEqpA-9_ac3zk"
     />

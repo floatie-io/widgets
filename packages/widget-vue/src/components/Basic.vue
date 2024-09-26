@@ -57,7 +57,7 @@ const widgetData = reactive<BasicWidgetData>({
 const isOpen = ref(false)
 const sendStatus = ref(DataStatus.DEFAULT)
 
-const reset = (e: MouseEvent) => {
+const reset = () => {
   isOpen.value = false
 
   setTimeout(() => {
@@ -105,19 +105,28 @@ const sendFeedback = async () => {
 
   sendStatus.value = DataStatus.SUCCESS
 }
+
+const toggle = () => {
+  if (isOpen.value) {
+    reset()
+    isOpen.value = false
+  } else {
+    isOpen.value = true
+  }
+}
 </script>
 
 <template>
   <div class="fl-container style-basic" :style="themeVars">
-    <div class="fl-trigger" @click="isOpen = true">
-      <Icon icon="ion:help" class="fl-trigger-icon" />
+    <div class="fl-trigger" @click="toggle">
+      <Icon :icon="isOpen ? 'ion:close' : 'ion:help'" class="fl-trigger-icon" />
     </div>
     <div v-if="isOpen" class="fl-feedback-container-wrapper">
       <div class="fl-feedback-container">
         <div class="fl-feedback-container-header" v-if="sendStatus !== DataStatus.SUCCESS">
           <span>{{ config.title }}</span>
           <div class="fl-feedback-container-header-close" @click="reset">
-            <Icon icon="uil:times" class="fl-close-icon" />
+            <Icon icon="ion:close" class="fl-close-icon" />
           </div>
         </div>
 
