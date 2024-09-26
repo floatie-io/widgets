@@ -1,6 +1,3 @@
 <template>
-  <div>
-    Nuxt module playground!
-    <FloatieBasic :config="{ offsetBottom: 100 }" />
-  </div>
+  <div>Nuxt module playground! <FloatieBasic  /></div>
 </template>

@@ -16,7 +16,5 @@ import Rating from '../components/Rating.vue'
       }"
       clientKey="s9kVs9HjcEqpA-9_ac3zk"
     />
-
-    <!-- <Rating clientKey="s9kVs9HjcEqpA-9_ac3zk" /> -->
   </div>
 </template>
