@@ -1,5 +1,27 @@
 # @floatie/widget-nuxt
 
+## v2.1.2
+
+[compare changes](https://github.com/your-org/my-module/compare/@floatie/widget-nuxt@2.1.1...v2.1.2)
+
+### 💅 Refactors
+
+- Build configuration to use absolute path for entry file ([7bc679e](https://github.com/your-org/my-module/commit/7bc679e))
+- Use pnpm ([4e04dd1](https://github.com/your-org/my-module/commit/4e04dd1))
+
+### 🏡 Chore
+
+- Migrate to bun ([302d168](https://github.com/your-org/my-module/commit/302d168))
+- Update dependencies ([97fd989](https://github.com/your-org/my-module/commit/97fd989))
+- Refactoring ([66f2875](https://github.com/your-org/my-module/commit/66f2875))
+- Use pnpm ([0555060](https://github.com/your-org/my-module/commit/0555060))
+- Refactor ([0fdf17c](https://github.com/your-org/my-module/commit/0fdf17c))
+- Update ([3ae2e7f](https://github.com/your-org/my-module/commit/3ae2e7f))
+
+### ❤️ Contributors
+
+- Eugen Istoc <eugenistoc@gmail.com>
+
 ## 2.1.1
 
 ### Patch Changes
