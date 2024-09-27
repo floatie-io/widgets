@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { RatingWidgetConfig } from '@floatie/widget-core'
+import { type Config, type RatingWidgetUiConfig } from '@floatie/widget-core'
 
-const props = defineProps<{ config?: RatingWidgetConfig; clientKey: string }>()
+const props = defineProps<{ config?: Config; ui?: RatingWidgetUiConfig }>()
 </script>
 
 <template>

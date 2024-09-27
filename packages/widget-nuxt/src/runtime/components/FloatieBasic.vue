@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { FloatieBasic as Basic } from '@floatie/widget-vue'
-import type { BasicWidgetConfig } from '@floatie/widget-core'
+import type { Config, BasicWidgetUiConfig } from '@floatie/widget-core'
 import { useRuntimeConfig } from '#imports'
 
-const props = defineProps<{ config?: BasicWidgetConfig }>()
+const { ui } = defineProps<{ ui?: BasicWidgetUiConfig }>()
 
 const {
   public: { floatie },
@@ -11,8 +11,5 @@ const {
 </script>
 
 <template>
-  <Basic
-    :config="props.config"
-    :client-key="floatie.clientKey"
-  />
+  <Basic :config="floatie" :ui="ui" />
 </template>

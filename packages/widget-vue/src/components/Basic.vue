@@ -4,12 +4,12 @@ import '@floatie/widget-core/dist/themes/basic.css'
 import { Icon } from '@iconify/vue'
 import { computed, reactive, ref } from 'vue'
 
-import { WidgetType, type BasicWidgetConfig, type BasicWidgetData } from '@floatie/widget-core'
+import { WidgetType, type Config, type BasicWidgetData, type BasicWidgetUiConfig } from '@floatie/widget-core'
 import { DataStatus, send } from '@floatie/widget-core'
 
-const props = defineProps<{ config?: BasicWidgetConfig; clientKey: string }>()
+const props = defineProps<{ config: Config; ui?: BasicWidgetUiConfig }>()
 
-const defaultConfig: BasicWidgetConfig = {
+const defaultConfig: BasicWidgetUiConfig = {
   offsetBottom: 30,
   offsetRight: 20,
   size: 'medium',
@@ -20,7 +20,7 @@ const defaultConfig: BasicWidgetConfig = {
 }
 
 const config = computed(() => {
-  return { ...defaultConfig, ...props.config }
+  return { ...defaultConfig, ...props.ui }
 })
 
 const sizeVars = computed(() => {
@@ -101,7 +101,7 @@ const setActiveMessageType = async (type: BasicWidgetData['type']) => {
 const sendFeedback = async () => {
   sendStatus.value = DataStatus.PENDING
 
-  await send<BasicWidgetData>(props.clientKey, WidgetType.Basic, widgetData, props.config)
+  await send<BasicWidgetData>(WidgetType.Basic, widgetData, props.config)
 
   sendStatus.value = DataStatus.SUCCESS
 }
