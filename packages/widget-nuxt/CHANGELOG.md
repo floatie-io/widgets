@@ -1,5 +1,11 @@
 # @floatie/widget-nuxt
 
+## 3.0.4
+
+### Patch Changes
+
+- update types
+
 ## 3.0.3
 
 ### Patch Changes
