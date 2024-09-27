@@ -1,5 +1,19 @@
 # @floatie/widget-nuxt
 
+## 3.0.0
+
+### Major Changes
+
+- 49d1a5c: Separate uiConfig from instance config
+
+### Patch Changes
+
+- 49d1a5c: update packages
+- Updated dependencies [49d1a5c]
+- Updated dependencies [49d1a5c]
+  - @floatie/widget-core@4.0.0
+  - @floatie/widget-vue@4.0.0
+
 ## 2.2.0
 
 ### Minor Changes

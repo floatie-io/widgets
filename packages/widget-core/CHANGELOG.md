@@ -1,5 +1,11 @@
 # @floatie/widget-core
 
+## 4.0.0
+
+### Major Changes
+
+- 49d1a5c: Separate uiConfig from instance config
+
 ## 3.1.0
 
 ### Minor Changes
