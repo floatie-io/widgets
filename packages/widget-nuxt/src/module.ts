@@ -17,19 +17,12 @@ export default defineNuxtModule<Config>({
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    nuxt.options.runtimeConfig.public.floatie = defu(nuxt.options.runtimeConfig.public.floatie, options)
-
+    nuxt.options.runtimeConfig.public['floatie'] = defu(nuxt.options.runtimeConfig.public['floatie'], options)
     nuxt.options.build.transpile.push('@floatie/widget-vue')
 
     addComponent({
       name: 'FloatieBasic',
       filePath: resolver.resolve('runtime/components/FloatieBasic.vue'),
-    })
-
-    addTemplate({
-      src: resolver.resolve('types/floatie.d.ts'),
-      filename: 'types/floatie.d.ts',
-      write: true,
     })
   },
 })
