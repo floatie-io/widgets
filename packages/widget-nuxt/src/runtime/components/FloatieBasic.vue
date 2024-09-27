@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { FloatieBasic as Basic } from '@floatie/widget-vue'
-import type { Config, BasicWidgetUiConfig } from '@floatie/widget-core'
+import type { BasicWidgetUiConfig } from '@floatie/widget-core'
 import { useRuntimeConfig } from '#imports'
 
 const { ui } = defineProps<{ ui?: BasicWidgetUiConfig }>()
