@@ -17,10 +17,7 @@ export default defineNuxtModule<Config>({
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    nuxt.options.runtimeConfig.public.floatie = {
-      ...nuxt.options.runtimeConfig.public.floatie,
-      ...options,
-    }
+    nuxt.options.runtimeConfig.public.floatie = defu(nuxt.options.runtimeConfig.public.floatie, options)
 
     nuxt.options.build.transpile.push('@floatie/widget-vue')
 
