@@ -30,8 +30,9 @@ export default defineNuxtModule<Config>({
     })
 
     addTemplate({
-      src: resolver.resolve('floatie.d.ts'),
+      src: resolver.resolve('types/floatie.d.ts'),
       filename: 'types/floatie.d.ts',
+      write: true,
     })
   },
 })

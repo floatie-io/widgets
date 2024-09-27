@@ -1,5 +1,11 @@
 # @floatie/widget-nuxt
 
+## 3.0.1
+
+### Patch Changes
+
+- Fix type template location
+
 ## 3.0.0
 
 ### Major Changes
